@@ -1,0 +1,82 @@
+body{
+    padding: 20px;
+    background-image: url(first/first.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+
+.login{
+        padding: 20px;
+        display: block;
+        background-color: rgba(240, 248, 255, 0.021);
+        border: 3px solid #bdcbd4d8;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #00000086;
+        align-items: center;
+       margin-top: 100px;
+       align-items: center;
+       justify-content: center;
+       backdrop-filter: blur(5px);
+}
+
+h1,p {
+    position: center;
+    color: rgb(209, 229, 247);
+    text-align: center;
+}
+a{ color: rgba(43, 43, 236, 0.932);}
+
+
+input{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.281);
+    margin: 5px;
+    padding: 2px;
+    color: black;
+}
+::placeholder{color: black;
+              padding: 10px;}
+
+button{
+    background-color: aliceblue;
+    color: rgba(6, 6, 99, 0.925);
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin:0 auto;
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+.erro{display: none;
+     color: red;}
+button:hover{
+    background-color: rgba(4, 4, 87, 0.692);
+    color: rgb(187, 187, 238);
+}
+@keyframes errosh {
+    0%,100%{transform: translateX(0);}
+    50%{transform: translateX(-10px);}
+    75%{transform: translateX(10px);}
+}
+
+.shake{
+    animation:errosh 0.3s;
+}
+
+.next{
+    display: flex;
+    background-color: #0000006b;
+    float: center;
+}

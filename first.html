@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="first.css">
+
+</head>
+<body>
+         <div class="login" id="login">
+                   <h1>login</h1>
+                   <div class="foam">
+                    
+                    <input type="text" placeholder="name" id="loginname" >
+                    <p class="erro" id="erro">both fields has to be fill</p>
+                  
+                    <div><input type="password" placeholder="password" id="pwd" >
+                   <input type="checkbox" onclick="
+                  document.getElementById('pwd').type =this.checked ? 'text': 'password'
+                   "></div>
+                  
+                  <p>do not have an account? <a href="#" onclick="showregister()">register</a></p>
+                   
+                   <button onclick="checklogin()">login</button>
+                 </div>
+
+
+
+         </div>
+  <div class="login" id="register" style="display: none;">
+                   <h1>Register</h1>
+                   <div class="rfoam">
+                    
+                    <input type="text" placeholder="name" id="rname" >
+                    <p class="erro ">both fields has to be fill</p>
+                    
+                    <div><input type="password" placeholder="password" id="password" >
+                   <input type="checkbox" onclick="document.getElementById('password').type=this.checked? 
+                   'text': 'password'"></div>
+
+                  <div> <input type="password" placeholder="verify"   id="pswrd" >
+                    <input type="checkbox" onclick="
+                   document.querySelector('#pswrd').type=this.checked? 'text':'password'
+                   "></div>
+
+                   <p>Alredy have an account? <a href="#" onclick="showlogin()">login</a></p>
+                    <button onclick="register()">Register</button>
+                 </div> </div>
+
+                 
+
+<script src="first.js"></script>
+            
+    
+</body>
+</html>
