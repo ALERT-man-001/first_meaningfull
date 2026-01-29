@@ -1,6 +1,6 @@
 body{
     padding: 20px;
-    background-image: url(first/first.jpg);
+    background-image: url(first.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -80,3 +80,4 @@ button:hover{
     background-color: #0000006b;
     float: center;
 }
+
